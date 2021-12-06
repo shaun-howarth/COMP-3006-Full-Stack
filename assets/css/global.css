@@ -1,7 +1,12 @@
 :root {
-    
+    --font-small: 16px;
+    --font-medium: 18px;
+    --font-large: 24px;
+    --font-family: "Helvetica Neue", "Lucida Grande", "Arial", "Verdana", "Tahoma", sans-serif;
+
+    --main-color: rgb(79, 174, 218);
 }
 
-.heading {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+body {
+    background: var(--main-color);
 }
