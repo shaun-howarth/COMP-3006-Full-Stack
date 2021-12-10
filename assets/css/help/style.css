@@ -1,7 +1,12 @@
 
+.body-text {
+    font-size: var(--font-medium);
+    font-weight: bold;
+}
+
 .drop-down {
     background: var(--main-third-colour);
-   
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
