@@ -4,6 +4,14 @@
     font-weight: bold;
 }
 
+.answer-text {
+    font-size: var(--font-medium);
+}
+
+.margin-space {
+    padding: 10px 10px 10px 0px;
+}
+
 .drop-down {
     background: var(--main-third-colour);
     color: black;
@@ -16,3 +24,21 @@
     font-size: 15px;
     border-radius: 10px 10px 10px 10px;
 }
+
+.answer-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background: var(--main-fourth-colour);
+    border-radius: 0 0 10px 10px;
+}
+
+.arrow-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    float: right;
+    fill: var(--main-button-colour);
+    margin: -2px 0 0 10px;
+}
+
