@@ -29,6 +29,10 @@ body {
     background: var(--main-color);
 }
 
+.wrapper {
+    font-size: 0;
+}
+
 .navbar {
     background: var(--main-second-colour);
     font-size: var(--font-larger);
