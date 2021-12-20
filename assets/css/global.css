@@ -9,7 +9,8 @@
     --main-color: rgb(79, 174, 218);
     --main-second-colour: rgb(255,255,255);
     --main-third-colour: rgb(240,240,240);
-    --main-fourth-colour: rgb(240,240,240);
+    --main-fourth-colour: rgb(180, 174, 174);
+    --main-fifth-colour: rgb(228, 224, 224);
 
     --main-button-colour: rgb(28, 116, 156);
     --button-icon-colour: rgb(14,12,10);
@@ -18,6 +19,10 @@
     /*shadows*/
 
     --shadow-light: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+}
+
+html, input, textarea {
+    font-family: var(--font-family);
 }
 
 body {
@@ -99,5 +104,9 @@ body {
     border-radius: 10px;
     display: block;
     font-size: var(--font-small);
+}
+
+button {
+    transition: background 0.25s;
 }
 
