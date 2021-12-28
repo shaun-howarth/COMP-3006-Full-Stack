@@ -13,6 +13,7 @@
     --main-fifth-colour: rgb(228, 224, 224);
 
     --main-button-colour: rgb(28, 116, 156);
+    --button-hover-colour: rgb(21 84 112);
     --button-icon-colour: rgb(14,12,10);
     --nav-bar-outline: rgb(223,131,38);
     --title-card-shadow: rgb(209, 122, 35);
@@ -43,7 +44,7 @@ body {
     padding: 10px 10px 10px 10px;
     width: auto;
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 .title-text {
@@ -58,7 +59,7 @@ body {
     background: var(--main-second-colour);
     font-size: var(--font-larger);
     text-align: center;
-    padding: 25px 25px 25px 25px;
+    padding: 10px 10px 10px 10px;
     width: auto;
     display: block;
     margin-bottom: 15px;
@@ -82,6 +83,10 @@ body {
     border: none;
     outline: none;
     transition: 0.25s;
+}
+
+.navbar-button:hover {
+    background-color: var(--button-hover-colour);
 }
 
 
