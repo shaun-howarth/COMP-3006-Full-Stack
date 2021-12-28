@@ -15,6 +15,7 @@
     --main-button-colour: rgb(28, 116, 156);
     --button-icon-colour: rgb(14,12,10);
     --nav-bar-outline: rgb(223,131,38);
+    --title-card-shadow: rgb(209, 122, 35);
 
     /*shadows*/
 
@@ -31,6 +32,26 @@ body {
 
 .wrapper {
     font-size: 0;
+}
+
+.title-card {
+    background: var(--nav-bar-outline);
+    box-shadow: var(--title-card-shadow);
+    color: var(--main-third-colour);
+    font-size: var(--font-large);
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.title-text {
+    font-size: var(--font-large);
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
 }
 
 .navbar {
@@ -63,33 +84,10 @@ body {
     transition: 0.25s;
 }
 
-.user-navbar-button {
-    fill: var(--button-icon-colour);
-    background-color: var(--main-second-colour);
-    border-radius: 10px 10px 10px 10px;
-    display: inline-block;font-size: medium;
-    padding: 10px 10px 10px 10px;
-    margin: 2px;
-    cursor: pointer;
-    height: 60px;
-    width: 140px;
-    border: none;
-    outline: none;
-    transition: 0.25s;
-}
+
 
 .svg-icon {
-    padding: 2px 10px 10px 10px;
-    width: 25px;
-    height: 25px;
-    vertical-align: bottom;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.user-svg-icon {
-    padding: 2px 10px 10px 10px;
+    padding: 3px 10px 10px 10px;
     width: 25px;
     height: 25px;
     vertical-align: bottom;
