@@ -68,6 +68,10 @@ body {
     outline-color: var(--nav-bar-outline);
 }
 
+.navbar a {
+    text-decoration: none;
+}
+
 .navbar-button {
     fill: var(--button-icon-colour);
     color: var(--main-second-colour);
@@ -76,17 +80,22 @@ body {
     border-radius: 10px 10px 10px 10px;
     display: inline-block;font-size: medium;
     padding: 10px 10px 10px 10px;
-    margin: 2px;
+    margin: 5px;
     cursor: pointer;
     height: 60px;
-    width: 140px;
+    width: 110px;
     border: none;
     outline: none;
     transition: 0.25s;
 }
 
-.navbar-button:hover {
+.navbar button:hover {
     background-color: var(--button-hover-colour);
+    transition: 0.25s;
+}
+
+.navbar button.active {
+    background: var(--button-hover-colour);
 }
 
 
