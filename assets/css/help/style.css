@@ -14,7 +14,7 @@
 
 .drop-down {
     background: var(--main-third-colour);
-    color: black;
+    color: var(--text-colour);
     cursor: pointer;
     padding: 18px;
     width: 100%;

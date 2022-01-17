@@ -18,8 +18,10 @@
     --nav-bar-outline: rgb(223,131,38);
     --title-card-shadow: rgb(209, 122, 35);
 
-    /*shadows*/
+    /*text-colours*/
+    --text-colour: rgb(50,48,48);
 
+    /*shadows*/
     --shadow-light: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
 }
 
@@ -98,8 +100,6 @@ body {
     background: var(--button-hover-colour);
 }
 
-
-
 .svg-icon {
     padding: 3px 10px 10px 10px;
     width: 25px;
@@ -113,13 +113,25 @@ body {
 .wide-card {
     background: var(--main-second-colour);
     box-shadow: var(--shadow-light);
-    color: black;
+    color: var(--text-colour);
     padding: 10px 10px 10px 10px;
     margin: 20px auto 0 auto;
     width: calc(100% - 40px - 20px);
     border-radius: 10px;
     display: block;
     font-size: var(--font-small);
+}
+
+.small-card {
+    background: var(--main-second-colour);
+    box-shadow: var(--shadow-light);
+    color: var(--text-colour);
+    padding: 10px 10px 10px 10px;
+    margin: 20px auto 0 20px;
+    width: calc(50% - 20px - 20px - 10px);
+    border-radius: 10px;
+    display: inline-block;
+    font-size: var(--font-smaller);
 }
 
 button {
