@@ -1,5 +1,16 @@
 body {
 background: linear-gradient(to left, rgb(117, 58, 143), rgb(186,56,47));
+}
 
+.card-text {
+    font-size: medium;
+    font-weight: bold;
+}
 
+.card-text-align {
+    text-align: center;
+}
+
+.button-div {
+    text-align: center;
 }

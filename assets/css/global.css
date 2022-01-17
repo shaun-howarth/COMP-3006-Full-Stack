@@ -91,6 +91,23 @@ body {
     transition: 0.25s;
 }
 
+.page-button {
+    fill: var(--button-icon-colour);
+    color: var(--main-second-colour);
+    background-color: var(--main-button-colour);
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;font-size: medium;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    cursor: pointer;
+    height: 70px;
+    width: 120px;
+    border: none;
+    outline: none;
+    transition: 0.25s;
+}
+
 .navbar button:hover {
     background-color: var(--button-hover-colour);
     transition: 0.25s;
