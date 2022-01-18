@@ -14,3 +14,7 @@ background: linear-gradient(to left, rgb(117, 58, 143), rgb(186,56,47));
 .button-div {
     text-align: center;
 }
+
+.margin-space {
+    padding: 30px 10px 0px 5px;
+}
