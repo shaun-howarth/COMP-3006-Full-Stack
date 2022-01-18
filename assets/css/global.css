@@ -60,6 +60,7 @@ body {
 .navbar {
     background: var(--main-second-colour);
     font-size: var(--font-larger);
+    color: var(--text-colour);
     text-align: center;
     padding: 10px 10px 10px 10px;
     width: auto;
