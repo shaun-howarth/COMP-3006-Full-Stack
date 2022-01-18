@@ -93,7 +93,6 @@ body {
 }
 
 .page-button {
-    fill: var(--button-icon-colour);
     color: var(--main-second-colour);
     background-color: var(--main-button-colour);
     font-weight: bold;
