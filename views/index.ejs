@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/index/style.css">
     
+    <script src="./assets/js/index-page.js"></script>
     <meta charset="UTF-8">
     <title>Landing Page</title>
 </head>
@@ -56,13 +57,29 @@
         </div>
 
         <div class="button-div">
-            <button class ="page-button">Open To-Do List Page!</button>
+            <div class="margin-space">
+                <a href="to-do-list">
+                    <button class ="page-button">Open To-Do List Page!</button>
+                </a>
+            </div>
         </div>
     </div>
 
     <div class="small-card">
         <div class="card-text-align">
             <span class="card-text">Current Time & Date:</span>
+        </div>
+
+        <div class="margin-space">
+            <span class="card-text" id="message"></span>
+
+            <span class="card-text" id="hour-text"></span>
+
+            <span class="card-text" id="minute-text"></span>
+
+            
+
+
         </div>
     </div>
 
