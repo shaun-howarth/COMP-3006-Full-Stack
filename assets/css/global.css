@@ -110,12 +110,21 @@ body {
 
 .navbar button:hover {
     background-color: var(--button-hover-colour);
-    transition: 0.25s;
 }
 
 .navbar button.active {
     background: var(--button-hover-colour);
 }
+
+.page-button:hover {
+    background-color: var(--button-hover-colour);
+    transition: background 0.25s;
+}
+
+.page-button.active {
+    background: var(--button-hover-colour);
+}
+
 
 .svg-icon {
     padding: 3px 10px 10px 10px;
@@ -149,6 +158,7 @@ body {
     border-radius: 10px;
     display: inline-block;
     font-size: var(--font-smaller);
+    vertical-align: top;
 }
 
 button {
