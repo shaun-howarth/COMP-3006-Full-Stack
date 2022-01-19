@@ -1,11 +1,11 @@
 :root {
-    /*fonts*/
+/*fonts*/
     --font-small: 16px;
     --font-medium: 18px;
     --font-large: 24px;
     --font-family: "Helvetica Neue", "Lucida Grande", "Arial", "Verdana", "Tahoma", sans-serif;
 
-    /*colours*/
+/*colours*/
     --main-color: rgb(79, 174, 218);
     --main-second-colour: rgb(255,255,255);
     --main-third-colour: rgb(240,240,240);
@@ -18,10 +18,10 @@
     --nav-bar-outline: rgb(223,131,38);
     --title-card-shadow: rgb(209, 122, 35);
 
-    /*text-colours*/
+/*text-colours*/
     --text-colour: rgb(50,48,48);
 
-    /*shadows*/
+/*shadows*/
     --shadow-light: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
 }
 
@@ -37,6 +37,7 @@ body {
     font-size: 0;
 }
 
+/*title text card*/
 .title-card {
     background: var(--nav-bar-outline);
     box-shadow: var(--title-card-shadow);
@@ -57,6 +58,7 @@ body {
     width: 8em;
 }
 
+/*title text card*/
 .navbar {
     background: var(--main-second-colour);
     font-size: var(--font-larger);
@@ -75,6 +77,7 @@ body {
     text-decoration: none;
 }
 
+/*styling for buttons in nav bar*/
 .navbar-button {
     fill: var(--button-icon-colour);
     color: var(--main-second-colour);
@@ -92,6 +95,7 @@ body {
     transition: 0.25s;
 }
 
+/*styling for buttons elsewhere*/
 .page-button {
     color: var(--main-second-colour);
     background-color: var(--main-button-colour);
@@ -108,6 +112,7 @@ body {
     transition: 0.25s;
 }
 
+/*button hover effects*/
 .navbar button:hover {
     background-color: var(--button-hover-colour);
 }
@@ -125,7 +130,7 @@ body {
     background: var(--button-hover-colour);
 }
 
-
+/*styling for svg icons in nav bar buttons*/
 .svg-icon {
     padding: 3px 10px 10px 10px;
     width: 25px;
@@ -136,6 +141,7 @@ body {
     margin-right: auto;
 }
 
+/*styling for wide card used in pages*/
 .wide-card {
     background: var(--main-second-colour);
     box-shadow: var(--shadow-light);
@@ -148,6 +154,7 @@ body {
     font-size: var(--font-small);
 }
 
+/*styling for small card used in pages*/
 .small-card {
     background: var(--main-second-colour);
     box-shadow: var(--shadow-light);

@@ -2,11 +2,13 @@ body {
     overflow: hidden;
 }
 
+/*styling modification for wide card*/
 .wide-card {
     width: 400px;
     height: 320px;
 }
 
+/*wide card text*/
 .wide-card span {
     font-weight: bold;
     display: block;
@@ -16,6 +18,7 @@ body {
     font-size: 18px;
 }
 
+/*styling for input login fields*/
 input {
     color: var(--text-colour);
     display: block;
@@ -29,6 +32,7 @@ input {
     border-radius: 10px;
 }
 
+/*styling for page button*/
 button {
     width: 140px;
     font-size: 16px;
