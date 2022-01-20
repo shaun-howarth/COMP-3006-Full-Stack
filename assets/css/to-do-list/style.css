@@ -1,0 +1,17 @@
+
+.subtitle-text {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.body-text {
+    font-size: var(--font-medium);
+}
+
+.text-align {
+    text-align: center;
+}
+
+.margin-space {
+    padding: 30px 10px 0px 5px;
+}
