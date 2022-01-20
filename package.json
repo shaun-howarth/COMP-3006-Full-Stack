@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/shaun-howarth/COMP-3006-Full-Stack#readme",
   "dependencies": {
+    "dotenv": "^14.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "mongoose": "^6.1.7",
     "node": "^17.1.0"
   },
   "devDependencies": {
