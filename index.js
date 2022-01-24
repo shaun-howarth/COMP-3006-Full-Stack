@@ -1,13 +1,24 @@
 const express = require("express");
 const app = express();
 const server = app.listen(8080);
+const dotenv = require("dotenv");
+const mongoose = require("mongoose");
 
-// ejs view engine configuration for express app
-app.set("View engine", "ejs");
+dotenv.config();
 
 app.use(express.urlencoded({ extended: true}));
 
 app.use("/assets", express.static("assets"));
+
+// connection to mongo db for to-do-list CRUD functionality
+// mongoose.set("useFindAndModify", false);
+
+mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () => {
+    console.log("Connected to the database!");
+});
+
+// ejs view engine configuration for express app
+app.set("View engine", "ejs");
 
 
 // index get render page
