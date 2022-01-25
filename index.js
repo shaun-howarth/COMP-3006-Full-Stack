@@ -28,7 +28,7 @@ app.set("View engine", "ejs");
 
 
 // index get render page
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index.ejs');
 });
 
@@ -37,16 +37,8 @@ app.get('/help', (req, res) => {
     res.render('help.ejs');
 });
 
-app.get('/login', (req, res) => {
-    res.render('login.ejs');
-});
-
-app.get('/sign-up', (req, res) => {
-    res.render('sign-up.ejs');
-});
-
 // get method for to-do-list page
-app.get('/', (req, res) => {
+app.get('/to-do-list', (req, res) => {
     TodoTask.find ({}, (err , tasks) => {
         res.render('to-do-list.ejs', { todoTask: tasks});
     });
