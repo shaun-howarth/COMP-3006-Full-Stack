@@ -1,4 +1,4 @@
-
+/*text span stylings*/
 .subtitle-text {
     font-size: medium;
     font-weight: bold;
@@ -12,6 +12,151 @@
     text-align: center;
 }
 
+/*margins*/
 .margin-space {
     padding: 30px 10px 0px 5px;
+}
+
+/*plus svg icon*/
+.plus-svg {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.list-wrapper {
+    color: var(--text-colour);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    padding: 20px;
+    width: 600px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/*todo container for editing*/
+.todo {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*task input text box*/
+.todo-header input {
+    width: 92%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    color: var(--text-colour);
+    background: var(--main-third-colour);
+    margin-right: 15px;
+}
+    
+/*add task button*/
+.todo-header button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+    font-family: var(--font-family);
+    background: var(--main-button-colour);
+    position: absolute;
+}
+    
+.list-wrapper ul {
+    list-style: none;
+}
+
+/*task card: to-do-list item*/
+.todo-list-item {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background: rgb(97, 159, 187);
+    display: flex;
+    flex-direction: row;
+}
+    
+.todo-list-item form {
+    width: 100%;
+    display: flex;
+}
+    
+.todo-list-item input {
+    flex-grow: 2;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+}
+
+/*Update task button: editing*/
+.todo-list-item button {
+    color: var(--main-second-colour);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-family: var(--font-family);
+    background-color: rgb(53, 151, 44);
+}
+
+/*Delete task button: editing*/
+.todo-list-item .cancel {
+    color: var(--main-second-colour);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-family: var(--font-family);
+    background-color: rgb(194, 39, 28);
+    margin-left: 5px;
+}
+    
+.todo-list-item div {
+    flex-grow: 2;
+}
+    
+/*hyperlink for edit svg*/
+.todo-list-item .edit {
+    margin-right: 10px;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+/*edit svg icon*/
+.edit-svg {
+    fill: rgb(74, 249, 57);
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+    
+/*hyperlink for delete svg*/
+.todo-list-item .delete {
+    margin-right: 5px;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+/*delete svg icon*/
+.delete-svg {
+    fill: rgb(194, 39, 28);
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
