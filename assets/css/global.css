@@ -17,7 +17,7 @@
     --button-icon-colour: rgb(14,12,10);
     --nav-bar-outline: rgb(223,131,38);
     --title-card-shadow: rgb(209, 122, 35);
-
+    
 /*text-colours*/
     --text-colour: rgb(50,48,48);
 
@@ -31,10 +31,6 @@ html, input, textarea {
 
 body {
     background: var(--main-color);
-}
-
-.wrapper {
-    font-size: 0;
 }
 
 /*title text card*/
@@ -171,4 +167,3 @@ body {
 button {
     transition: background 0.25s;
 }
-
