@@ -1,0 +1,33 @@
+body {
+    
+    
+    justify-content: center;
+}
+
+#message-wrapper {
+    width: 80%;
+    max-width: 1200px;
+}
+
+#message-wrapper div {
+    background-color: #CCC;
+    padding: 5px;
+}
+
+#message-wrapper div:nth-child(2n) {
+    background-color: var(--main-second-colour);
+}
+
+#send-wrapper {
+    position: fixed;
+    padding-bottom: 30px;
+    bottom: 0;
+    background-color: var(--main-fourth-colour);
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+}
+
+#message-input {
+    flex-grow: 1;
+}
