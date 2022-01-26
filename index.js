@@ -86,3 +86,7 @@ app.route("/delete/:id").get((req, res) => {
         res.redirect("/to-do-list");
     });
 });
+
+app.get('/chat', (req, res) => {
+    res.render('chat.ejs');
+});
