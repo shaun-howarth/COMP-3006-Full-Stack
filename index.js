@@ -9,6 +9,18 @@ const req = require("express/lib/request");
 const res = require("express/lib/response");
 
 
+
+
+const io = require('socket.io')(8080)
+
+io.on('connection', socket => {
+    console.log('new user');
+    socket.emit('chat-message', 'Hello World')
+})
+
+
+
+
 dotenv.config();
 
 app.use(express.urlencoded({ extended: true}));
@@ -87,6 +99,3 @@ app.route("/delete/:id").get((req, res) => {
     });
 });
 
-app.get('/chat', (req, res) => {
-    res.render('chat.ejs');
-});
