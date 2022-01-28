@@ -16,7 +16,7 @@ The live chat room web page uses the Socket.IO library within the server so that
 
 ## Third Party visualisation tools used (sources credited):
 
-## Font-Awesome SVG icons from GitHub repository: used in ejs files.
+### Font-Awesome SVG icons from GitHub repository: used in ejs files.
 
 ### Global Navigation Bar:
 Home button svg: https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/solid/home.svg
