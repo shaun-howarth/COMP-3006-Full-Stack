@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const server = app.listen(3000);
 
 // data models
 const TodoTask = require("./models/TodoTask");
@@ -10,15 +11,25 @@ const res = require("express/lib/response");
 
 
 
-
+// socket.io configuration
 const io = require('socket.io')(8080)
 
+const users = {}
+
 io.on('connection', socket => {
-    console.log('new user');
-    socket.emit('chat-message', 'Hello World')
+    socket.on('new-user', username => {
+        users[socket.id] = username
+        socket.broadcast.emit('user-connected', username)
+    })
+    socket.on('send-chat-message' , message => {
+        socket.broadcast.emit('chat-message', { message: message, username:
+        users[socket.id]})
+    })
+    socket.on('disconnect', () => {
+        socket.broadcast.emit('user-disconnected', users[socket.id])
+        delete users[socket.id]
+    })
 })
-
-
 
 
 dotenv.config();
@@ -28,13 +39,11 @@ app.use(express.urlencoded({ extended: true}));
 app.use("/assets", express.static("assets"));
 
 // connection to mongo db for to-do-list CRUD functionality
-// mongoose.set("useFindAndModify", false);
+
 
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () => {
+   // message to see that env connection to DB can be made in the console
     console.log("Connected to the database!");
-    // using TCP port: 3000 for node web app
-    app.listen(3000, () => console.log("Server is running"));
-    
 });
 
 // ejs view engine configuration for express app
@@ -46,10 +55,15 @@ app.get('/', (req, res) => {
     res.render('index.ejs');
 });
 
+//app.get('/chat', (req, res) => {
+   // res.render('chat.ejs');
+//});
+
 // help get render page
 app.get('/help', (req, res) => {
     res.render('help.ejs');
 });
+
 
 // get method for to-do-list page rendering: CRUD CREATE DATA
 app.get('/to-do-list', (req, res) => {
