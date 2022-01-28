@@ -7,20 +7,24 @@ const username = prompt('Please enter your chat name!')
 appendMessage('You have joined the chat room.')
 socket.emit('new-user', username)
 
+// chat message data transmission
 socket.on('chat-message', data => {
     appendMessage(data.username + ": " + data.message)
 })
 
+// user/client connected transmission
 socket.on('user-connected', username => {
     appendMessage(username + " Connected");
     
 })
 
+// user/client disconnected transmission
 socket.on('user-disconnected', username => {
     appendMessage(username + " Disconnected");
     
 })
 
+// message input value transmission
 messageForm.addEventListener('submit', e => {
     e.preventDefault()
     const message = messageInput.value
@@ -29,6 +33,7 @@ messageForm.addEventListener('submit', e => {
     messageInput.value = ''
 })
 
+// message input value transmission: creating message element div for text area
 function appendMessage(message) {
     const messageElement = document.createElement('div')
     messageElement.innerText = message

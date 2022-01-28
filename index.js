@@ -3,6 +3,7 @@ const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const server = app.listen(3000);
+const io = require('socket.io')(8080)
 
 // data models
 const TodoTask = require("./models/TodoTask");
@@ -10,10 +11,7 @@ const req = require("express/lib/request");
 const res = require("express/lib/response");
 
 
-
-// socket.io configuration
-const io = require('socket.io')(8080)
-
+// socket.io configuration: users array
 const users = {}
 
 io.on('connection', socket => {
@@ -31,16 +29,11 @@ io.on('connection', socket => {
     })
 })
 
-
 dotenv.config();
-
 app.use(express.urlencoded({ extended: true}));
-
 app.use("/assets", express.static("assets"));
 
 // connection to mongo db for to-do-list CRUD functionality
-
-
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () => {
    // message to see that env connection to DB can be made in the console
     console.log("Connected to the database!");
@@ -112,4 +105,3 @@ app.route("/delete/:id").get((req, res) => {
         res.redirect("/to-do-list");
     });
 });
-
