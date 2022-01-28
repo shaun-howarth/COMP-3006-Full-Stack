@@ -16,9 +16,9 @@ The live chat room web page uses the Socket.IO library within the server so that
 
 ## Third Party visualisation tools used (sources credited):
 
-Font-Awesome SVG icons from GitHub repository: used in ejs files.
+## Font-Awesome SVG icons from GitHub repository: used in ejs files.
 
-Global Navigation Bar:
+### Global Navigation Bar:
 Home button svg: https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/solid/home.svg
 
 GitHub button svg: https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/github-square.svg
@@ -28,11 +28,11 @@ Developer button svg: https://github.com/FortAwesome/Font-Awesome/blob/master/sv
 Question mark (help button) svg: https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/solid/question-circle.svg
 
 
-Help Web Page:
+### Help Web Page:
 Question arrow drop-down svg: https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/solid/arrow-right.svg
 
 
-To-do-list Web Page: for original and edit task card web page format.
+### To-do-list Web Page: for original and edit task card web page format.
 To-do-list plus svg: https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/regular/plus-square.svg?short_path=7ccd21f
 
 To-do-list edit svg: https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/regular/edit.svg
