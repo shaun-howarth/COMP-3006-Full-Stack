@@ -10,7 +10,7 @@ MiDash is an interactive web app that consists of an online/electronic To-Do lis
 
 The live chat room web page uses the Socket.IO library within the server so that multiple clients can access the same chat room simultaneously. When a user enters the web page a promt will come up asking to enter in a guest name. Once a name has been entered the user will join the chat room with that guest name. The clients who are typing text messages to each other will be labelled with their guest names in the live chat. 
 
-## Link to YouTube video demonstration of web app:
+## Link to YouTube video demonstration of web app: https://youtu.be/JzfmS3EdnAk
 
 
 
